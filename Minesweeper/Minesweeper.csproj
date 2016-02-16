@@ -59,7 +59,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -87,13 +86,13 @@
     <None Include="Resources\mine.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\tile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\smile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
