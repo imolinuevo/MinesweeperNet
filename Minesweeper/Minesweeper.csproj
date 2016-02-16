@@ -59,18 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -84,16 +84,16 @@
     <None Include="Resources\mine.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mine2.ico" />
+    <None Include="Resources\mine.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\smiley1.ico" />
+    <None Include="Resources\tile.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\smiley2.ico" />
+    <None Include="Resources\sad.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tile.ico" />
+    <None Include="Resources\smile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
