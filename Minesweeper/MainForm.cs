@@ -13,6 +13,7 @@ namespace Minesweeper
     public partial class MainForm : Form
     {
         private Button[,] cellGrid;
+        private Timer timer = new Timer();
 
         public MainForm()
         {
@@ -35,6 +36,19 @@ namespace Minesweeper
             this.ActiveControl = playAgain;
         }
 
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            int time = Int32.Parse(clock.Text) + 1;
+            clock.Text = time.ToString();
+        }
+
         private void playAgainClick(object sender, EventArgs e)
         {
             
@@ -43,10 +57,9 @@ namespace Minesweeper
         private void cellClick(object sender, EventArgs e)
         {
             ((Button) sender).FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            ((Button)sender).Image = null;
             ((Button)sender).Text = "1";
             ((Button)sender).ForeColor = Color.Red;
-            //((Button)sender).Enabled = false;
-            ((Button)sender).Image = null;
         }
     }
 }
